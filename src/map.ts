@@ -119,13 +119,6 @@ export class WorldMap {
     this.zoomTo(c.focus, animate, c.small ? MIN_SPAN_SMALL : MIN_SPAN);
   }
 
-  /** 答えたあと、ハイライトを解除する（色だけ残す） */
-  clearTarget(): void {
-    if (!this.targetId) return;
-    this.countries.get(this.targetId)?.path.classList.remove('target');
-    this.marker.classList.remove('visible');
-  }
-
   showWorld(animate = true): void {
     this.zoomTo([[0, 0], [BASE_WIDTH, this.height]], animate, MIN_SPAN, 1);
   }

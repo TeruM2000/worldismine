@@ -97,7 +97,6 @@ async function start() {
 
     // 答えたあとは覚えやすいよう、国旗と首都を全部見せる
     showHints(HINT_COUNT);
-    map.clearTarget();
     map.setMastery(answer.id, progress[answer.id].mastery);
     updateCounts(progress);
     els.hintBtn.hidden = true;
