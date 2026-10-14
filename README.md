@@ -19,8 +19,8 @@ npm run build    # 型チェックとビルド（dist/ に出力）
 
 ## 公開
 
-デフォルトブランチに push すると GitHub Actions がビルドし、GitHub Pages に公開する。
-初回だけ、リポジトリの Settings → Pages → Build and deployment の Source を「GitHub Actions」にする。
+https://worldismine.teltel.dev で公開する（Cloudflare Pages）。
+本番用のブランチに push すると Cloudflare が自動でビルドして更新する。設定手順は [docs/deploy.md](docs/deploy.md) を参照。
 
 ## 使っているデータ
 
