@@ -12,14 +12,14 @@
 ```sh
 npm install
 npm run dev      # 開発サーバー
-npm run build    # 型チェックとビルド（dist/ に出力）
+npm run build    # 型チェックとビルド（dist/worldismine/ に出力）
 ```
 
 地図データ（`public/world.json`）は Natural Earth 1:50m から作っている。作り直すときは `npm run build:map`。
 
 ## 公開
 
-https://worldismine.teltel.dev で公開する（Cloudflare Pages）。
+https://teltel.dev/worldismine/ で公開する（Cloudflare Pages）。
 本番用のブランチに push すると Cloudflare が自動でビルドして更新する。設定手順は [docs/deploy.md](docs/deploy.md) を参照。
 
 ## 使っているデータ
